@@ -29,7 +29,7 @@ This beamer template can be loaded using the theme command:
 
 ```
 
-A working example is located in the example directory (written for LuaLaTeX).
+A working example is `example.tex` in this repository (written for LuaLaTeX).
 
 
 ## Replacing default images
@@ -62,8 +62,8 @@ Issues and contributions
 ------------------------------------------------------------------------------
 
 Please report all issues to the [this Github
-page](https://github.com/mutlusun/uds), do not contact the press team of
-University of Saarland. All contributions are welcome.
+page](https://github.com/mutlusun/beamertheme-uds/issues), do not contact the
+press team of University of Saarland. All contributions are welcome.
 
 
 Licence
