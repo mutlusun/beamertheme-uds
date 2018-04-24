@@ -61,7 +61,7 @@ sign.
 Issues and contributions
 ------------------------------------------------------------------------------
 
-Please report all issues to the [this Github
+Please report all issues to [this Github
 page](https://github.com/mutlusun/beamertheme-uds/issues), do not contact the
 press team of University of Saarland. All contributions are welcome.
 
