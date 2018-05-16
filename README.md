@@ -8,9 +8,10 @@ Saarland.
 Installation
 ------------------------------------------------------------------------------
 
-Simply copy the files into your `texmf/tex/latex` folder. The location of
-these folders may vary depending on operating system and tex distribution.
-Even simpler: place the files into your latex working directory.
+Installation is done by coping the files from this repository into the
+`texmf/tex/latex` folder. The location of these folders may vary depending on
+operating system and tex distribution. `make install` will do this for you.
+Another possibility is to place the files into your latex working directory.
 
 The template can be used by `pdflatex`, `xetex` or `lualatex`.
 
@@ -30,6 +31,7 @@ This beamer template can be loaded using the theme command:
 ```
 
 A working example is `example.tex` in this repository (written for LuaLaTeX).
+The example file can be compiled with `make example`.
 
 
 ## Replacing default images
