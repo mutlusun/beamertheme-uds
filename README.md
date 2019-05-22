@@ -36,11 +36,7 @@ The example file can be compiled with `make example`.
 
 ## Replacing default images
 
-Default images can be replaced by placing images with the same name in the
-latex working directory. Image names are (images with .png, .pdf, .jpg, .eps
-extensions are loadable):
-* `front-picture` to replace the image on the title page
-* `logoUdS` to replace the University of Saarland icon in the top right corner
+Use the apropriate outher theme options.
 
 
 ## Options
@@ -50,14 +46,16 @@ sign.
 
 ### Outer theme
 
-* `udsicon=true` (boolean): Specifies whether a University of Saarland icon is
-  placed in the right upper corner.
+* `udsicon=true` (boolean): Specifies whether a icon is placed in the right
+  upper corner.
+* `udsiconpath=logoUdS.pdf` (string): Path to icon in the upper right corner.
 * `footline=true` (boolean): Enable/disable footline.
 * `footlinetext` (string): Which text should be shown in the middle of the
   footline. Put strings with spaces in parantheses: `footlinetext={example
   presentation}`
 * `titlepagehead=true` (boolean): Enable/disable headline on title page.
 * `titlepagepic=true` (boolean): Show/hide default picture on title page.
+* `titlepagepicpath=front-picture.jpg` (string): Path to picture on title page.
 
 
 Issues and contributions

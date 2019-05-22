@@ -17,6 +17,12 @@
 }
 \ExecuteOptionsBeamer{udsicon=true}
 
+% Outer theme: udsiconpath
+\DeclareOptionBeamer{udsiconpath}{
+  \PassOptionsToPackage{udsiconpath=#1}{beamerouterthemeUdS}
+}
+\ExecuteOptionsBeamer{udsiconpath=logoUdS.pdf}
+
 % Outer theme: footline
 \DeclareOptionBeamer{footline}{
   \PassOptionsToPackage{footline=#1}{beamerouterthemeUdS}
@@ -40,6 +46,12 @@
   \PassOptionsToPackage{titlepagepic=#1}{beamerouterthemeUdS}
 }
 \ExecuteOptionsBeamer{titlepagepic=true}
+
+% Outer theme: titlepagepicpath
+\DeclareOptionBeamer{titlepagepicpath}{
+  \PassOptionsToPackage{titlepagepicpath=#1}{beamerouterthemeUdS}
+}
+\ExecuteOptionsBeamer{titlepagepicpath=front-picture.jpg}
 
 % ProcessOptions
 \ProcessOptionsBeamer

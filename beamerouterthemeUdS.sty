@@ -25,6 +25,8 @@
 \beamer@theme@udsicontrue
 
 \DeclareOptionBeamer{udsicon}[true]{\csname beamer@theme@udsicon#1\endcsname}
+\DeclareOptionBeamer{udsiconpath}{\def\beamer@theme@udsiconpath{#1}}
+\ExecuteOptionsBeamer{udsiconpath=}
 \ProcessOptionsBeamer
 
 \defbeamertemplate*{frametitle}{UdS theme}
@@ -58,7 +60,7 @@
       }\fi
       \ifbeamer@theme@udsicon
         \node[anchor=south east] at ([yshift=0.2cm]current page.south east) 
-          {\includegraphics[height=1.0cm]{logoUdS}};
+          {\includegraphics[height=1.0cm]{\beamer@theme@udsiconpath}};
       \else
       \fi
       \shade[left color=black,right color=bg] (0.0cm, 0.0cm) rectangle(\paperwidth, .15cm);
@@ -132,6 +134,8 @@
 
 \DeclareOptionBeamer{titlepagehead}[true]{\csname beamer@theme@titlepagehead#1\endcsname}
 \DeclareOptionBeamer{titlepagepic}[true]{\csname beamer@theme@titlepagepic#1\endcsname}
+\DeclareOptionBeamer{titlepagepicpath}{\def\beamer@theme@titlepagepicpath{#1}}
+\ExecuteOptionsBeamer{titlepagepicpath=}
 \ProcessOptionsBeamer
 
 \setbeamertemplate{background}
@@ -140,7 +144,8 @@
   \begin{tikzpicture}
     \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
     \ifnum\thepage=1
-      \node[anchor=south] at (1.5cm, 0.6cm) {\includegraphics[width=3cm]{front-picture}};
+      \node[anchor=south] at (1.5cm, 0.6cm)
+      {\includegraphics[width=3cm]{\beamer@theme@titlepagepicpath}};
     \fi
   \end{tikzpicture}
   \else
@@ -157,20 +162,20 @@
 
   \vfill
 
-  \hspace{3cm}\parbox{7cm}{\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle}
+  \hspace{3cm}\parbox{.6\paperwidth}{\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle}
   \ifx\insertsubtitle\@empty
   \else
     \vskip2ex
-    \hspace{3cm}\parbox{7cm}{\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle}
+    \hspace{3cm}\parbox{.6\paperwidth}{\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle}
   \fi
 
   \vfill
 
-  \hspace{3cm}\parbox{7cm}{\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor}
+  \hspace{3cm}\parbox{.6\paperwidth}{\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor}
 
   \vfill
 
-  \hspace{3cm}\parbox{7cm}{\raggedright\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute}
+  \hspace{3cm}\parbox{.6\paperwidth}{\raggedright\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute}
 }
 
 

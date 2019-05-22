@@ -3,7 +3,7 @@ INSTALL_DIR 	= $(DEST_DIR)/tex/latex/beamertheme-uds
 DEMO_SRC 		= example
 
 .PHONY: default 
-default: $(ROOT).pdf
+default: example
 
 .PHONY: install
 install: $(DEMO_SRC).pdf
