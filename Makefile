@@ -8,7 +8,7 @@ default: example
 .PHONY: install
 install: $(DEMO_SRC).pdf
 	mkdir -p $(INSTALL_DIR)
-	cp -v *.sty example.tex example.pdf $(INSTALL_DIR)
+	cp -v *.sty example.tex example.pdf front-picture.jpg logoUdS.pdf logoUdScomplete.pdf $(INSTALL_DIR)
 
 .PHONY: uninstall
 uninstall:
