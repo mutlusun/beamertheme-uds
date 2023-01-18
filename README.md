@@ -2,7 +2,9 @@ beamertheme-uds
 ==============================================================================
 
 A LaTeX beamer theme complying with the corporate design of University of
-Saarland. 
+Saarland.
+
+THIS TEMPLATE IS OUTDATED. YOU WILL FIND THE CURRENT TEMPLATE AT https://www.uni-saarland.de/verwaltung/cd/vorlagen.html.
 
 
 Installation
